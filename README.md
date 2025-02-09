@@ -26,6 +26,13 @@ end
 -- Tocar o som assim que o script for executado
 playSound()
 
+local args = {
+    [1] = "RolePlayName",
+    [2] = "luckystarz executed!"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+
 local Tab1 = NewTab({Name = "main", Icon = "IconName"})
 --[[
 Name = "TabName" >> UI Button TabName (String)
@@ -1616,6 +1623,45 @@ coroutine.wrap(JUBNQKI_fake_script)()
   end
 })
 
+--[[
+Name = "Text" >> Button Text (String)
+Callback = function(Value) -button press function
+-- function here
+end --end function
+]]3
+
+local Button1 = AddButton(Tab1, {
+  Name = "teclado mobile",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  print("Clicked")
+  end
+})
+--[[
+Name = "Text" >> Button Text (String)
+Callback = function(Value) -button press function
+-- function here
+end --end function
+]]
+
+local Button1 = AddButton(Tab1, {
+  Name = "invisivel",
+  Callback = function()loadstring(game:HttpGet('https://abre.ai/invisible-v2'))();
+  print("Clicked")
+  end
+})
+--[[
+Name = "Text" >> Button Text (String)
+Callback = function(Value) -button press function
+-- function here
+end --end function
+]]
+
+local Button1 = AddButton(Tab1, {
+  Name = "fly gui v3",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+  print("Clicked")
+  end
+})
 --[[
 Name = "Text" >> Button Text (String)
 Callback = function(Value) -button press function
